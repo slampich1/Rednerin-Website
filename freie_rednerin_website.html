@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Persönliche Reden für Hochzeiten, Abschiede und besondere Lebensmomente." />
+  <title>Worte, die bleiben | Freie Rednerin</title>
+  <style>
+    :root{
+      --bg:#f7f4ef; --paper:#fffdf9; --text:#2e2a27; --muted:#746c65;
+      --accent:#9c6f57; --accent2:#d9c4b5; --dark:#302925; --line:#e9dfd7;
+      --shadow:0 14px 40px rgba(44,34,28,.10); --radius:24px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.15;margin:0 0 1rem}
+    a{color:inherit}
+    .wrap{width:min(1180px,calc(100% - 36px));margin:auto}
+    nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(247,244,239,.88);border-bottom:1px solid rgba(156,111,87,.12)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;min-height:76px}
+    .brand{text-decoration:none;font-weight:700;letter-spacing:.02em;display:flex;flex-direction:column}
+    .brand small{font-weight:500;color:var(--muted);font-size:.74rem}
+    .menu{display:flex;gap:24px;align-items:center}
+    .menu a{text-decoration:none;font-size:.95rem}
+    .menu .cta{padding:10px 16px;border-radius:999px;background:var(--dark);color:white}
+    .hero{min-height:76vh;display:grid;place-items:center;padding:76px 0 56px;background:radial-gradient(circle at 82% 18%,rgba(217,196,181,.55),transparent 28%),linear-gradient(180deg,#fbf8f4 0%,#f7f4ef 100%)}
+    .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:58px;align-items:center}
+    .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;color:var(--accent);font-weight:700;margin-bottom:18px}
+    .hero h1{font-size:clamp(3rem,7vw,6.7rem);max-width:900px}
+    .hero p{font-size:1.18rem;color:var(--muted);max-width:650px}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;text-decoration:none;padding:14px 20px;border-radius:999px;border:1px solid var(--dark);font-weight:650}
+    .btn.primary{background:var(--dark);color:white}
+    .btn.soft{border-color:var(--accent2);background:rgba(255,255,255,.5)}
+    .portrait{min-height:520px;border-radius:38px;background:linear-gradient(135deg,#d9c4b5,#b79a88);box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .portrait:before{content:"Foto der Rednerin";position:absolute;inset:0;display:grid;place-items:center;color:white;font-family:Georgia,serif;font-size:2rem;opacity:.9}
+    .portrait-card{position:absolute;left:24px;right:24px;bottom:24px;padding:20px 22px;border-radius:20px;background:rgba(255,253,249,.92);backdrop-filter:blur(10px)}
+    section{padding:88px 0}
+    .section-head{max-width:720px;margin-bottom:38px}
+    .section-head h2{font-size:clamp(2.2rem,5vw,4.1rem)}
+    .section-head p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:0 5px 18px rgba(30,20,15,.04)}
+    .card .num{font-size:.8rem;color:var(--accent);font-weight:700;letter-spacing:.12em}
+    .card h3{font-size:1.8rem;margin-top:24px}
+    .card p{color:var(--muted)}
+    .about{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:center}
+    .quote{background:var(--dark);color:white;border-radius:32px;padding:42px;font-family:Georgia,serif;font-size:2rem;line-height:1.35}
+    .quote span{display:block;font-family:Inter,sans-serif;font-size:.86rem;color:#d8cec7;margin-top:22px}
+    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .step{border-top:1px solid var(--accent2);padding-top:18px}
+    .step b{display:block;font-family:Georgia,serif;font-size:1.4rem;margin-bottom:8px}
+    .step p{color:var(--muted);font-size:.95rem}
+    .contact{background:linear-gradient(135deg,#3b312c,#241f1c);color:white;border-radius:34px;padding:48px;display:grid;grid-template-columns:1.2fr .8fr;gap:34px}
+    .contact p{color:#d8cec7}
+    .contact-box{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:24px}
+    .contact-box a{display:block;margin:.35rem 0;text-decoration:none}
+    footer{padding:28px 0 48px;color:var(--muted);font-size:.9rem}
+    @media(max-width:900px){
+      .menu{display:none}.hero-grid,.about,.contact{grid-template-columns:1fr}.portrait{min-height:400px}.cards{grid-template-columns:1fr}.process{grid-template-columns:1fr 1fr}.hero{padding-top:40px}
+    }
+    @media(max-width:560px){
+      .wrap{width:min(100% - 24px,1180px)}.hero h1{font-size:3.2rem}.process{grid-template-columns:1fr}.contact{padding:30px 22px}section{padding:64px 0}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap nav-inner">
+      <a class="brand" href="#start">WORTE, DIE BLEIBEN<small>Freie Rednerin für besondere Momente</small></a>
+      <div class="menu">
+        <a href="#angebot">Angebot</a>
+        <a href="#ueber-mich">Über mich</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#kontakt" class="cta">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="start">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Persönlich. Feinfühlig. Echt.</div>
+          <h1>Worte für Momente, die im Herzen bleiben.</h1>
+          <p>Individuelle Reden für Hochzeiten, Abschiede und besondere Lebensmomente – persönlich geschrieben, liebevoll erzählt und mit einem feinen Gespür für Menschen.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#kontakt">Unverbindlich anfragen</a>
+            <a class="btn soft" href="#angebot">Mein Angebot</a>
+          </div>
+        </div>
+        <div class="portrait">
+          <div class="portrait-card">
+            <strong>„Keine Rede von der Stange.“</strong><br>
+            <span>Jede Geschichte verdient ihre eigenen Worte.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="angebot">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Mein Angebot</div>
+          <h2>Für die großen Übergänge im Leben.</h2>
+          <p>Ob voller Freude oder leise und still – ich finde Worte, die zu Menschen und Momenten passen.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="num">01</div>
+            <h3>Hochzeitsreden</h3>
+            <p>Persönliche freie Trauungen mit Wärme, Humor und echten Geschichten – ohne Kitsch, aber mit Gefühl.</p>
+          </article>
+          <article class="card">
+            <div class="num">02</div>
+            <h3>Trauer- & Grabreden</h3>
+            <p>Würdevolle Abschiedsreden, die einen Menschen sichtbar machen und Erinnerungen behutsam in Worte fassen.</p>
+          </article>
+          <article class="card">
+            <div class="num">03</div>
+            <h3>Besondere Anlässe</h3>
+            <p>Jubiläen, Taufen, Geburtstage oder Lebensfeiern – individuell vorbereitet und persönlich vorgetragen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="ueber-mich">
+      <div class="wrap about">
+        <div class="quote">„Ich höre zu, finde den roten Faden und mache daraus Worte, die berühren.“<span>— Vorname Nachname, freie Rednerin</span></div>
+        <div>
+          <div class="eyebrow">Über mich</div>
+          <h2>Mit Gefühl für Menschen und Geschichten.</h2>
+          <p>Jede Rede beginnt für mich mit Zuhören. Wer seid ihr? Was hat euch geprägt? Welche kleinen Geschichten erzählen eigentlich am meisten über einen Menschen?</p>
+          <p>Aus diesen Gesprächen entsteht eine Rede, die nicht austauschbar klingt, sondern vertraut. Warm, ehrlich, manchmal humorvoll – und immer passend zum Anlass.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ablauf">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">So läuft es ab</div>
+          <h2>Einfach, persönlich und ohne komplizierten Aufwand.</h2>
+        </div>
+        <div class="process">
+          <div class="step"><b>1. Anfrage</b><p>Kurze Nachricht mit Termin, Anlass und Ort.</p></div>
+          <div class="step"><b>2. Kennenlernen</b><p>Persönliches Gespräch oder Videocall in entspannter Atmosphäre.</p></div>
+          <div class="step"><b>3. Vorbereitung</b><p>Ich schreibe die Rede individuell auf Basis unserer Gespräche.</p></div>
+          <div class="step"><b>4. Der Moment</b><p>Ich begleite euch vor Ort und trage die Rede persönlich vor.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <div class="wrap">
+        <div class="contact">
+          <div>
+            <div class="eyebrow" style="color:#d9c4b5">Kontakt</div>
+            <h2>Erzählt mir von eurem Anlass.</h2>
+            <p>Für eine unverbindliche Anfrage reichen zunächst Termin, Ort und ein paar Zeilen zum Anlass. Ich melde mich persönlich zurück.</p>
+          </div>
+          <div class="contact-box">
+            <strong>Vorname Nachname</strong>
+            <a href="mailto:hallo@deinedomain.at">hallo@deinedomain.at</a>
+            <a href="tel:+436601234567">+43 660 123 45 67</a>
+            <p>Tirol · Österreich<br>Termine nach Vereinbarung</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Vorname Nachname · Freie Rednerin · Impressum · Datenschutz</div>
+  </footer>
+</body>
+</html>
